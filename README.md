@@ -1,5 +1,11 @@
 # KTP Management System - DeployPratikum2
 
+<img width="1907" height="890" alt="image" src="https://github.com/user-attachments/assets/811da474-863a-4d49-a6f3-5e85e762c96c" />
+
+<img width="840" height="186" alt="image" src="https://github.com/user-attachments/assets/9b2cd080-58ac-41f1-92f5-afd066e9a120" />
+
+
+
 Sistem manajemen data KTP berbasis web menggunakan **Spring Boot** untuk backend dan **jQuery AJAX** untuk frontend. Proyek ini mendemonstrasikan implementasi CRUD (Create, Read, Update, Delete) yang lengkap dengan validasi nomor KTP unik.
 
 ---

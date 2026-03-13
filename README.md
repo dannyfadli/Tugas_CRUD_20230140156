@@ -4,7 +4,7 @@ Sistem manajemen data KTP berbasis web menggunakan **Spring Boot** untuk backend
 
 ---
 
-## 🛠️ Stack Teknologi
+## Stack Teknologi
 * **Backend:** Java 17, Spring Boot 3, Spring Data JPA
 * **Database:** MySQL / H2 (Jakarta Persistence)
 * **Library:** Lombok, Jakarta Validation
@@ -12,7 +12,7 @@ Sistem manajemen data KTP berbasis web menggunakan **Spring Boot** untuk backend
 
 ---
 
-## 📋 Fitur Utama
+##Fitur Utama
 - [x] **Daftar KTP:** Menampilkan seluruh data KTP dari database.
 - [x] **Tambah Data:** Validasi nomor KTP tidak boleh duplikat.
 - [x] **Edit Data:** Memperbarui informasi KTP yang sudah ada.
@@ -21,7 +21,7 @@ Sistem manajemen data KTP berbasis web menggunakan **Spring Boot** untuk backend
 
 ---
 
-## 🚀 Endpoints API (KTP Controller)
+## endpoints API (KTP Controller)
 
 | Method | Endpoint | Deskripsi |
 | :--- | :--- | :--- |
@@ -66,7 +66,7 @@ Sistem manajemen data KTP berbasis web menggunakan **Spring Boot** untuk backend
 
 ---
 
-## 🧪 Pengujian (Unit Test)
+## Pengujian (Unit Test)
 Proyek ini dilengkapi dengan pengujian konteks dasar:
 ```bash
 ./mvnw test

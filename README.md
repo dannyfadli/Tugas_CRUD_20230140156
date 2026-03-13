@@ -50,9 +50,9 @@ Sistem manajemen data KTP berbasis web menggunakan **Spring Boot** untuk backend
     git clone [https://github.com/username/DeployPratikum2.git](https://github.com/username/DeployPratikum2.git)
     ```
 2.  **Konfigurasi Database:**
-    Sesuaikan `src/main/resources/application.properties` dengan database kamu.
+    Sesuaikan `src/main/resources/application.properties` 
     ```properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/db_pratikum
+    spring.datasource.url=jdbc:mysql://localhost:8080
     spring.datasource.username=root
     spring.datasource.password=
     spring.jpa.hibernate.ddl-auto=update

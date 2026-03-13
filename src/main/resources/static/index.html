@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi CRUD Data KTP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Data Kartu Tanda Penduduk (KTP)</h1>
+
+    <div id="notification" class="notification" style="display: none;"></div>
+
+    <div class="card">
+        <h2 id="formTitle">Tambah Data KTP</h2>
+        <form id="ktpForm">
+            <input type="hidden" id="ktpId" name="id">
+
+            <div class="form-group">
+                <label for="nomorKtp">Nomor KTP (16 Digit):</label>
+                <input type="text" id="nomorKtp" name="nomorKtp" required maxlength="16" minlength="16" pattern="\d{16}" title="Harus 16 digit angka">
+            </div>
+
+            <div class="form-group">
+                <label for="namaLengkap">Nama Lengkap:</label>
+                <input type="text" id="namaLengkap" name="namaLengkap" required>
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group row">
+                <div class="col">
+                    <label for="tanggalLahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+                </div>
+                <div class="col">
+                    <label for="jenisKelamin">Jenis Kelamin:</label>
+                    <select id="jenisKelamin" name="jenisKelamin" required>
+                        <option value="">-- Pilih Jenis Kelamin --</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" id="btnSubmit" class="btn btn-primary">Simpan</button>
+                <button type="button" id="btnCancel" class="btn btn-secondary" style="display: none;">Batal</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="card mt-4">
+        <h2>Daftar KTP</h2>
+        <div class="table-responsive">
+            <table id="ktpTable">
+                <thead>
+                <tr>
+                    <th>No KTP</th>
+                    <th>Nama Lengkap</th>
+                    <th>Alamat</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Aksi</th>
+                </tr>
+                </thead>
+                <tbody id="ktpTableBody">
+                <!-- Data will be populated here via Ajax -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
